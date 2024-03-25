@@ -1,20 +1,15 @@
 package com.codurance;
 
-import javax.swing.text.StringContent;
-
 public class Timeline {
-    private String user;
+    private String username;
     private String userPost;
 
     public boolean isEmpty() {
-        if(userPost != null) {
-            return false;
-        }
-        return true;
+        return userPost == null;
     }
 
-    public void post(String user, String userPost) {
-        this.user = user;
+    public void post(String username, String userPost) {
+        this.username = username;
         this.userPost = userPost;
     }
 }

@@ -14,9 +14,9 @@ public class TimelineShould {
     @Test
     public void not_be_empty_after_first_post() {
         Timeline timeline = new Timeline();
-        String user = "Alice";
+        String username = "Alice";
         String userPost = "Message 1";
-        timeline.post(user, userPost);
+        timeline.post(username, userPost);
         assertFalse(timeline.isEmpty());
     }
 }
